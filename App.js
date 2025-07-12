@@ -1,11 +1,14 @@
 import React from 'react';
-import AppNavigator from './navigation/AppNavigator';
-import { GoalProvider } from './context/GoalContext';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigator from './app/navigation/AppNavigator';
+import { GoalProvider } from './app/context/GoalContext';
 
 export default function App() {
-  return(
+  return (
     <GoalProvider>
-      <AppNavigator />
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
     </GoalProvider>
   );
 }
