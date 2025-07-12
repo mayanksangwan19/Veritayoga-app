@@ -1,0 +1,19 @@
+
+# Node modules
+node_modules/
+
+# React Native
+ios/Pods/
+android/.gradle/
+android/app/build/
+*.keystore
+
+# Logs
+*.log
+
+# Bundle output
+*.jsbundle
+
+# IDE files
+.vscode/
+.idea/
